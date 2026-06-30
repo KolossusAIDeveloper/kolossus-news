@@ -9,7 +9,7 @@ jobs:
         with:
           node-version: '18'
       - run: npm install
-      - run: npx jest tests/ --testTimeout=30000
+      - run: npx jest tests/ --testTimeout=30000 --forceExit
   frontend:
     runs-on: ubuntu-latest
     steps:
