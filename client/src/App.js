@@ -43,7 +43,7 @@ export default function App() {
   useEffect(() => {
     setSelectedArticle(null);
     fetchNews();
-  }, [category]);
+  }, [category, fetchNews]);
 
   useEffect(() => {
     const interval = setInterval(() => fetchNews(true), REFRESH_INTERVAL);
